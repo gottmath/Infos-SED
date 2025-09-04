@@ -1,0 +1,17 @@
+{
+  "name": "infos-sed",
+  "version": "20.25",
+  "description": "Consultar informações pelo RA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
