@@ -7,7 +7,7 @@ Dando a liberdade de importar suas bibliotecas e aplicações á sites externos.
  **O site/script NÃO TEM nenhum fim mal intencionado, apenas a exposição da vulnerabilidade.**
 
  Ele utiliza ferramentas como **cors** para receber requisições de diferentes origens.
- Sendo sua única função de consultar as informações do RA e Senha dada na aplicação.
+ Sendo sua única função de consultar as informações (Nome, CPF, E-mail, Data de nascimento..) do RA e Senha dada na aplicação.
 
  # Execução do site
 
