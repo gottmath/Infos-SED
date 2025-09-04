@@ -1,16 +1,13 @@
-
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const path = require('path');
-const cors = require('cors');
+
 const app = express();
 const port = 3000;
 
-s
-app.use(cors());
-app.use(bodyParser.json()); 
-app.use(express.static(__dirname)); 
+app.use(bodyParser.json());
+app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -40,7 +37,7 @@ app.post('/fazer-login', async (req, res) => {
         res.status(200).json(response.data);
 
     } catch (error) {
-        console.error(`[!] Erro ao fazer a requisição: ${error.message}`);
+        console.error(`Erro ao fazer a requisição: ${error.message}`);
         if (error.response) {
             res.status(error.response.status).json({
                 erro: true,
@@ -55,5 +52,6 @@ app.post('/fazer-login', async (req, res) => {
         }
     }
 });
+
 app.listen(port, () => {
 });
